@@ -45,5 +45,12 @@ if( computerMove === playerMove){
 if( playerMove == 'nieznany ruch'){
     printMessage('Wybierz 1, 2 lub 3')
 }
-
-
+if( computerMove == 'kamień' && playerMove == 'nożyce'){
+  printMessage('Przegrałeś, spróbuj jeszcze raz');
+}
+if( computerMove == 'papier' && playerMove == 'kamień'){
+  printMessage('Przegrałeś, spróbuj jeszcze raz');
+}
+if( computerMove == 'nożyce' && playerMove == 'papier'){
+  printMessage('Przegrałeś, spróbuj jeszcze raz')
+}
